@@ -25,8 +25,8 @@ public class Enrollment {
     private String paymentMethod;
     private Boolean paymentStatus;
 
-    private Instant createdAt;
-    private Instant lastModifiedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime lastModifiedAt;
 
     private String createdBy;
     private String lastModifiedBy;

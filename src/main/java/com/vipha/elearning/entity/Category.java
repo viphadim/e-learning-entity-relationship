@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Setter
@@ -25,12 +26,12 @@ public class Category {
     @Column(nullable = false, length = 50)
     private String name;
 
-    private Instant createdAt;
-    private Instant lastModifiedAt;
-
+    private LocalDateTime createdAt;
+    private LocalDateTime lastModifiedAt;
 
     private String createdBy;
     private String lastModifiedBy;
+
 
     @Column(nullable = false)
     private Boolean isDeleted;

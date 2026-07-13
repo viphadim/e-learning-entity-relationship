@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
@@ -17,7 +18,6 @@ import java.util.List;
 public class StudentProfile {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String userId;
 
     private String facebookLink;
@@ -27,8 +27,8 @@ public class StudentProfile {
     private String university;
     private String profilePicture;
 
-    private Instant createdAt;
-    private Instant lastModifiedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime lastModifiedAt;
 
     private String createdBy;
     private String lastModifiedBy;
