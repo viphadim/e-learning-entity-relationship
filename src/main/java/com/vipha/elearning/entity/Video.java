@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
@@ -27,8 +28,8 @@ public class Video {
     private String thumbnail;
     private String title;
 
-    private Instant createdAt;
-    private Instant lastModifiedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime lastModifiedAt;
 
     private String createdBy;
     private String lastModifiedBy;

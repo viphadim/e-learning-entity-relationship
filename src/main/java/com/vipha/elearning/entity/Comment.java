@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -22,8 +23,8 @@ public class Comment {
     private Boolean isDeleted;
     private String text;
 
-    private Instant createdAt;
-    private Instant lastModifiedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime lastModifiedAt;
 
     private String createdBy;
     private String lastModifiedBy;

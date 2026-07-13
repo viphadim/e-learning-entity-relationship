@@ -4,9 +4,11 @@ package com.vipha.elearning.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.Setter;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Setter
@@ -18,8 +20,6 @@ import java.util.List;
 public class InstructorProfile {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
     private String userId;
 
     private String biography;
@@ -29,8 +29,8 @@ public class InstructorProfile {
     private String jobTitle;
     private String phoneNumber;
 
-    private Instant createdAt;
-    private Instant lastModifiedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime lastModifiedAt;
 
     private String createdBy;
     private String lastModifiedBy;
