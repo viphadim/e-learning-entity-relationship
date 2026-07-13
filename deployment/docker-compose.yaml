@@ -1,0 +1,28 @@
+networks:
+  spring-net:
+    external: true
+
+volumes:
+  e-learning-vol:
+
+services:
+  e-learning-db:
+    image: postgres:18.4
+    container_name: spring-e-learning
+    ports:
+      - '1200:5432'
+
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+
+    volumes:
+      - e-learning-vol:/var/lib/postgresql/18.4/docker
+
+
+    networks:
+      spring-net:
+
+
+
