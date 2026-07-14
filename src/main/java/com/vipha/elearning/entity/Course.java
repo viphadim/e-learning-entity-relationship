@@ -39,6 +39,7 @@ public class Course {
     private Float totalHours;
 
     private LocalDateTime createdAt;
+    private LocalDateTime updateAt;
     private LocalDateTime lastModifiedAt;
 
     private String createdBy;
