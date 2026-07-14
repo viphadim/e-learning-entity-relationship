@@ -27,6 +27,8 @@ public class Video {
     private String slug;
     private String thumbnail;
     private String title;
+    private String youtube;
+    private String duration;
 
     private LocalDateTime createdAt;
     private LocalDateTime lastModifiedAt;
