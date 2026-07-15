@@ -4,10 +4,9 @@ package com.vipha.elearning.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
+
 import lombok.Setter;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -20,8 +19,8 @@ import java.util.List;
 public class InstructorProfile {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String userId;
-
     private String biography;
 
     private String facebookLink;
