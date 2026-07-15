@@ -18,6 +18,7 @@ import java.util.List;
 public class StudentProfile {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String userId;
 
     private String facebookLink;
